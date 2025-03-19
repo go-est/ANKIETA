@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przekierowanie...</title>
+    <script>
+        var urls = [
+            "https://forms.gle/PX1JUhFydUUoEuW16", 
+            "https://forms.gle/vSY8mPPamWnbJJDX8", 
+            "https://forms.gle/eTsUSBDDhfnWY4v49"
+        ];
+        var randomIndex = Math.floor(Math.random() * urls.length);
+        window.location.href = urls[randomIndex];
+    </script>
+</head>
+<body>
+    <p>Przekierowanie... Jeśli nic się nie dzieje, <a id="redirectLink" href="#">kliknij tutaj</a>.</p>
+    <script>
+        document.getElementById("redirectLink").href = urls[randomIndex];
+    </script>
+</body>
+</html>
